@@ -11,11 +11,7 @@ android {
 
 
 dependencies {
-//    implementation project(Module.common)
-//    implementation project(Module.domain)
-//    implementation project(Module.data)
-//    implementation project(Module.home)
-//    implementation project(Module.details)
+    implementation project(Modules.domain)
 
     implementation Dependencies.Libraries.androidCoreKTX
     implementation Dependencies.Libraries.androidAPPCompat
