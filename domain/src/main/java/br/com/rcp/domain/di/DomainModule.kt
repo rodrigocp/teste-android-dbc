@@ -2,8 +2,8 @@ package br.com.rcp.domain.di
 
 import android.content.SharedPreferences
 import android.preference.PreferenceManager
-import br.com.rcp.domain.implementation.UserRepositoryImpl
 import br.com.rcp.domain.repository.UserRepository
+import br.com.rcp.domain.repository.UserRepositoryImpl
 import org.koin.dsl.module
 
 val domain = module {

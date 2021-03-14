@@ -1,4 +1,4 @@
-package br.com.rcp.domain.implementation
+package br.com.rcp.domain.repository
 
 import android.content.SharedPreferences
 import androidx.core.content.edit
