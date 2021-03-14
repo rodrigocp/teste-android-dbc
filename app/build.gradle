@@ -1,0 +1,27 @@
+import br.com.rcp.buildsrc.*
+
+apply plugin: 'com.android.application'
+apply from: '../android-build.gradle'
+
+android {
+    defaultConfig {
+        applicationId Build.Name.applicationID
+    }
+}
+
+
+dependencies {
+//    implementation project(Module.common)
+//    implementation project(Module.domain)
+//    implementation project(Module.data)
+//    implementation project(Module.home)
+//    implementation project(Module.details)
+
+    implementation Dependencies.Libraries.androidCoreKTX
+    implementation Dependencies.Libraries.androidAPPCompat
+    implementation Dependencies.Libraries.androidMaterial
+
+    testImplementation Dependencies.Tests.jUnit
+    androidTestImplementation Dependencies.Tests.jUnitExtension
+    androidTestImplementation Dependencies.Tests.espressoCore
+}

@@ -1,0 +1,24 @@
+import br.com.rcp.buildsrc.*
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath Dependencies.Builds.buildGradle
+        classpath Dependencies.Builds.kotlinGradlePlugin
+        classpath Dependencies.Builds.navigationSafeArgsGradlePlugin
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
