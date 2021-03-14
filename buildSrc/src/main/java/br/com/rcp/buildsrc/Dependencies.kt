@@ -13,13 +13,13 @@ object Dependencies {
             const val androidCoreKTX                  = "1.3.2"
             const val androidAPPCompat                = "1.2.0"
             const val androidMaterial                 = "1.3.0"
-
             const val interceptor                     = "4.8.1"
             const val retrofit                        = "2.9.0"
-
             const val koin                            = "2.1.5"
-
             const val sharedPreference                = "1.1.1"
+            const val picasso                         = "2.71828"
+            const val navigationKTX                   = "2.3.2"
+            const val constraintLayout                = "2.0.4"
         }
 
         object Tests {
@@ -34,6 +34,11 @@ object Dependencies {
         const val androidCoreKTX                  = "androidx.core:core-ktx:${Versions.Libraries.androidCoreKTX}"
         const val androidAPPCompat                = "androidx.appcompat:appcompat:${Versions.Libraries.androidAPPCompat}"
         const val androidMaterial                 = "com.google.android.material:material:${Versions.Libraries.androidMaterial}"
+
+        const val picasso                         = "com.squareup.picasso:picasso:${Versions.Libraries.picasso}"
+        const val navigationFragmentKTX           = "androidx.navigation:navigation-fragment-ktx:${Versions.Libraries.navigationKTX}"
+        const val navigationKTX                   = "androidx.navigation:navigation-ui-ktx:${Versions.Libraries.navigationKTX}"
+        const val constraintLayout                =  "androidx.constraintlayout:constraintlayout:${Versions.Libraries.constraintLayout}"
 
         const val interceptor                     = "com.squareup.okhttp3:logging-interceptor:${Versions.Libraries.interceptor}"
         const val retrofit                        = "com.squareup.retrofit2:retrofit:${Versions.Libraries.retrofit}"
