@@ -1,3 +1,6 @@
+include ':details'
+include ':views'
+include ':home'
 include ':commons'
 include ':remote'
 include ':domain'

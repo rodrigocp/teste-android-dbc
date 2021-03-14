@@ -12,10 +12,33 @@ android {
 
 dependencies {
     implementation project(Modules.domain)
+    implementation project(Modules.commons)
+    implementation project(Modules.remote)
+    implementation project(Modules.views)
+    implementation project(Modules.home)
 
-    implementation Dependencies.Libraries.androidCoreKTX
-    implementation Dependencies.Libraries.androidAPPCompat
-    implementation Dependencies.Libraries.androidMaterial
+    implementation Dependencies.Libraries.koin
+
+//    implementation Dependencies.Libraries.kotlinStandardLibrary
+//    implementation Dependencies.Libraries.androidCoreKTX
+//    implementation Dependencies.Libraries.androidAPPCompat
+//    implementation Dependencies.Libraries.androidMaterial
+//    implementation Dependencies.Libraries.constraintLayout
+//    implementation Dependencies.Libraries.koin
+//    implementation Dependencies.Libraries.koinViewModel
+//    implementation Dependencies.Libraries.koinScope
+//    implementation Dependencies.Libraries.picasso
+//    implementation Dependencies.Libraries.sharedPreference
+//    implementation Dependencies.Libraries.interceptor
+//    implementation Dependencies.Libraries.swipeRefresh
+//    implementation Dependencies.Libraries.lifecycle
+//    implementation Dependencies.Libraries.lifecycleKTX
+//    implementation Dependencies.Libraries.lifecycleLiveData
+//    implementation Dependencies.Libraries.lifecycleCommon
+//    implementation Dependencies.Libraries.retrofit
+//    implementation Dependencies.Libraries.gsonConverter
+//    implementation Dependencies.Libraries.navigationFragmentKTX
+//    implementation Dependencies.Libraries.navigationKTX
 
     testImplementation Dependencies.Tests.jUnit
     androidTestImplementation Dependencies.Tests.jUnitExtension

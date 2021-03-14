@@ -20,6 +20,8 @@ object Dependencies {
             const val picasso                         = "2.71828"
             const val navigationKTX                   = "2.3.2"
             const val constraintLayout                = "2.0.4"
+            const val lifecycle                       = "2.2.0"
+            const val swipeRefresh                    = "1.1.0"
         }
 
         object Tests {
@@ -39,6 +41,11 @@ object Dependencies {
         const val navigationFragmentKTX           = "androidx.navigation:navigation-fragment-ktx:${Versions.Libraries.navigationKTX}"
         const val navigationKTX                   = "androidx.navigation:navigation-ui-ktx:${Versions.Libraries.navigationKTX}"
         const val constraintLayout                =  "androidx.constraintlayout:constraintlayout:${Versions.Libraries.constraintLayout}"
+        const val swipeRefresh                    = "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.Libraries.swipeRefresh}"
+        const val lifecycle                       = "androidx.lifecycle:lifecycle-extensions:${Versions.Libraries.lifecycle}"
+        const val lifecycleKTX                    = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.Libraries.lifecycle}"
+        const val lifecycleLiveData               = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.Libraries.lifecycle}"
+        const val lifecycleCommon                 = "androidx.lifecycle:lifecycle-common:${Versions.Libraries.lifecycle}"
 
         const val interceptor                     = "com.squareup.okhttp3:logging-interceptor:${Versions.Libraries.interceptor}"
         const val retrofit                        = "com.squareup.retrofit2:retrofit:${Versions.Libraries.retrofit}"

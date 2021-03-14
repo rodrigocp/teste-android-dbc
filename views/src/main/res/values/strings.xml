@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Views</string>
+    <string name="hour">Horário</string>
+    <string name="local">Local</string>
+</resources>
