@@ -3,7 +3,7 @@ package br.com.rcp.domain.models
 import java.math.BigDecimal
 
 data class Event(
-    val identifier  : Long,
+    val id          : Long,
     val title       : String,
     val description : String,
     val image       : String,

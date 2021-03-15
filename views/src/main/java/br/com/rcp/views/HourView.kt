@@ -13,7 +13,7 @@ class HourView @JvmOverloads constructor(context: Context, attributeSet: Attribu
 
     init {
         inflate(context, R.layout.view_hour, this)
-        hour = findViewById(R.id.hour)
+        hour = findViewById(R.id.hourv)
     }
 
     fun bind(date: Long) {

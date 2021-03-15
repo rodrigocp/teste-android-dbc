@@ -6,4 +6,5 @@ object Modules {
     const val commons  = ":commons"
     const val views    = ":views"
     const val home     = ":home"
+    const val details  = ":details"
 }

@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import br.com.rcp.commons.utils.ResponseHandler
@@ -72,7 +73,7 @@ class EventListFragment : Fragment(), SwipeRefreshLayout.OnRefreshListener {
     }
 
     private fun setRecyclerViewAdapter() {
-        adapter                = EventListAdapter(requireContext(), arrayListOf()) {}
+        adapter                = EventListAdapter(requireContext(), arrayListOf()) { requireView().findNavController().navigate(EventListFragmentDirections.toDetail(it.id)) }
         binding.events.adapter = adapter
     }
 
