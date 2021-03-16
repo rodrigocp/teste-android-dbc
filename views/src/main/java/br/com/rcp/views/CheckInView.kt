@@ -23,25 +23,9 @@ class CheckInView @JvmOverloads constructor(context: Context, attributeSet: Attr
 
     fun bind(identifier: Long, onCheckInSelected: (CheckIn) -> Unit) {
         button.setOnClickListener {
-            if (checkFieldsOk()) {
-                onCheckInSelected(CheckIn(identifier.toString(), getEmailField(), getNameField()))
-            }
+            onCheckInSelected(CheckIn(identifier.toString(), getEmailField(), getNameField()))
         }
     }
-
-    private fun checkFieldsOk(): Boolean {
-        if (!isEmailValid(getEmailField()) || getEmailField().isEmpty()) {
-            email.error = "Email inválido"
-            return false
-        } else if (getNameField().isEmpty()) {
-            name.error = "Nome inválido"
-            return false
-        }
-        return true
-    }
-
-    private fun isEmailValid(email: String): Boolean =
-        Patterns.EMAIL_ADDRESS.matcher(email).matches()
 
     private fun getEmailField(): String {
         return email.text.toString()

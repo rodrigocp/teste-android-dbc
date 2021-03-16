@@ -28,6 +28,8 @@ object Dependencies {
             const val jUnit                           = "4.13.1"
             const val jUnitExtension                  = "1.1.2"
             const val espressoCore                    = "3.3.0"
+            const val mockk                           = "1.9.3"
+            const val kotlinCoroutineTests            = "1.4.3"
         }
     }
 
@@ -62,6 +64,8 @@ object Dependencies {
         const val jUnit                           = "junit:junit:${Versions.Tests.jUnit}"
         const val jUnitExtension                  = "androidx.test.ext:junit:${Versions.Tests.jUnitExtension}"
         const val espressoCore                    = "androidx.test.espresso:espresso-core:${Versions.Tests.espressoCore}"
+        const val mockk                           = "io.mockk:mockk:${Versions.Tests.mockk}"
+        const val kotlinCoroutineTests            = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.Tests.kotlinCoroutineTests}"
     }
 
     object Builds {

@@ -7,4 +7,7 @@ dependencies {
     implementation Dependencies.Libraries.koin
     implementation Dependencies.Libraries.retrofit
     implementation Dependencies.Libraries.sharedPreference
+
+    testImplementation Dependencies.Tests.mockk
+    testImplementation Dependencies.Tests.kotlinCoroutineTests
 }

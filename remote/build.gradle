@@ -10,4 +10,7 @@ dependencies {
     implementation Dependencies.Libraries.retrofit
     implementation Dependencies.Libraries.interceptor
     implementation Dependencies.Libraries.gsonConverter
+
+    testImplementation Dependencies.Tests.mockk
+    testImplementation Dependencies.Tests.kotlinCoroutineTests
 }
