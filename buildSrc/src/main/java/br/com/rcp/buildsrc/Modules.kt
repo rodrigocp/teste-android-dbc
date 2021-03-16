@@ -5,6 +5,6 @@ object Modules {
     const val remote   = ":remote"
     const val commons  = ":commons"
     const val views    = ":views"
-    const val home     = ":home"
+    const val main     = ":main"
     const val details  = ":details"
 }

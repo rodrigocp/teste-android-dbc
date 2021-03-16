@@ -15,7 +15,7 @@ dependencies {
     implementation project(Modules.commons)
     implementation project(Modules.remote)
     implementation project(Modules.views)
-    implementation project(Modules.home)
+    implementation project(Modules.main)
     implementation project(Modules.details)
 
     implementation Dependencies.Libraries.koin

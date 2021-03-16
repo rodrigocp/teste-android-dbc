@@ -16,7 +16,7 @@
             <option value="$PROJECT_DIR$/commons" />
             <option value="$PROJECT_DIR$/details" />
             <option value="$PROJECT_DIR$/domain" />
-            <option value="$PROJECT_DIR$/home" />
+            <option value="$PROJECT_DIR$/main" />
             <option value="$PROJECT_DIR$/remote" />
             <option value="$PROJECT_DIR$/views" />
           </set>

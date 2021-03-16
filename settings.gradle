@@ -1,6 +1,6 @@
 include ':details'
 include ':views'
-include ':home'
+include ':main'
 include ':commons'
 include ':remote'
 include ':domain'
