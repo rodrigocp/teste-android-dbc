@@ -35,7 +35,7 @@ class EventListAdapter(private val context: Context, private val list: ArrayList
             with(event) {
                 binding.event   = this
                 binding.dateView.bind(date)
-                binding.shortDescriptionView.bind(title, price)
+                binding.shortDescriptionView.bind(title, latitude, longitude, price)
             }
 
             binding.root.setOnClickListener {

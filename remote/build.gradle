@@ -8,9 +8,12 @@ dependencies {
 
     implementation Dependencies.Libraries.koin
     implementation Dependencies.Libraries.retrofit
-    implementation Dependencies.Libraries.interceptor
     implementation Dependencies.Libraries.gsonConverter
 
     testImplementation Dependencies.Tests.mockk
     testImplementation Dependencies.Tests.kotlinCoroutineTests
+}
+
+configurations.all() {
+    resolutionStrategy.force Dependencies.Libraries.okhttp
 }

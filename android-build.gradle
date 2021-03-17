@@ -45,6 +45,7 @@ android {
 }
 
 dependencies {
+    implementation Dependencies.Libraries.multidex
     implementation Dependencies.Libraries.kotlinStandardLibrary
     testImplementation Dependencies.Tests.jUnit
     androidTestImplementation Dependencies.Tests.jUnitExtension

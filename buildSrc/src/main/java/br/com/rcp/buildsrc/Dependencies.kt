@@ -13,8 +13,7 @@ object Dependencies {
             const val androidCoreKTX                  = "1.3.2"
             const val androidAPPCompat                = "1.2.0"
             const val androidMaterial                 = "1.3.0"
-            const val interceptor                     = "4.8.1"
-            const val retrofit                        = "2.9.0"
+            const val retrofit                        = "2.5.0"
             const val koin                            = "2.1.5"
             const val sharedPreference                = "1.1.1"
             const val picasso                         = "2.71828"
@@ -22,6 +21,10 @@ object Dependencies {
             const val constraintLayout                = "2.0.4"
             const val lifecycle                       = "2.2.0"
             const val swipeRefresh                    = "1.1.0"
+            const val playServices                    = "9.8.0"
+            const val multidex                        = "1.0.3"
+            const val okhttp                          = "3.12.0"
+            const val converter                       = "2.6.4"
         }
 
         object Tests {
@@ -42,22 +45,24 @@ object Dependencies {
         const val picasso                         = "com.squareup.picasso:picasso:${Versions.Libraries.picasso}"
         const val navigationFragmentKTX           = "androidx.navigation:navigation-fragment-ktx:${Versions.Libraries.navigationKTX}"
         const val navigationKTX                   = "androidx.navigation:navigation-ui-ktx:${Versions.Libraries.navigationKTX}"
-        const val constraintLayout                =  "androidx.constraintlayout:constraintlayout:${Versions.Libraries.constraintLayout}"
+        const val constraintLayout                = "androidx.constraintlayout:constraintlayout:${Versions.Libraries.constraintLayout}"
         const val swipeRefresh                    = "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.Libraries.swipeRefresh}"
         const val lifecycle                       = "androidx.lifecycle:lifecycle-extensions:${Versions.Libraries.lifecycle}"
         const val lifecycleKTX                    = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.Libraries.lifecycle}"
         const val lifecycleLiveData               = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.Libraries.lifecycle}"
         const val lifecycleCommon                 = "androidx.lifecycle:lifecycle-common:${Versions.Libraries.lifecycle}"
 
-        const val interceptor                     = "com.squareup.okhttp3:logging-interceptor:${Versions.Libraries.interceptor}"
+        const val okhttp                          = "com.squareup.okhttp3:okhttp:${Versions.Libraries.okhttp}"
         const val retrofit                        = "com.squareup.retrofit2:retrofit:${Versions.Libraries.retrofit}"
-        const val gsonConverter                   = "com.squareup.retrofit2:converter-gson:${Versions.Libraries.retrofit}"
+        const val gsonConverter                   = "com.squareup.retrofit2:converter-gson:${Versions.Libraries.converter}"
 
         const val koinViewModel                   = "org.koin:koin-androidx-viewmodel:${Versions.Libraries.koin}"
         const val koinScope                       = "org.koin:koin-androidx-scope:${Versions.Libraries.koin}"
         const val koin                            = "org.koin:koin-android:${Versions.Libraries.koin}"
-
         const val sharedPreference                = "androidx.preference:preference-ktx:${Versions.Libraries.sharedPreference}"
+
+        const val playServices                    = "com.google.android.gms:play-services:${Versions.Libraries.playServices}"
+        const val multidex                        = "com.android.support:multidex:${Versions.Libraries.multidex}"
     }
 
     object Tests {

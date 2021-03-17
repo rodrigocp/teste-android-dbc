@@ -11,11 +11,7 @@ import java.text.NumberFormat
 import java.util.*
 
 
-class ShortDescriptionView @JvmOverloads constructor(
-    context: Context,
-    attributeSet: AttributeSet? = null,
-    defStyleAttr: Int = 0
-) : ConstraintLayout(context, attributeSet, defStyleAttr), KoinComponent {
+class ShortDescriptionView @JvmOverloads constructor(context: Context, attributeSet: AttributeSet? = null, defStyleAttr: Int = 0) : ConstraintLayout(context, attributeSet, defStyleAttr), KoinComponent {
     private val city  : TextView
     private val title : TextView
     private val price : TextView
@@ -27,9 +23,10 @@ class ShortDescriptionView @JvmOverloads constructor(
         price = findViewById(R.id.price)
     }
 
-    fun bind(title: String, price: BigDecimal): ShortDescriptionView {
+    fun bind(title: String, latitude: BigDecimal, longitude: BigDecimal, price: BigDecimal): ShortDescriptionView {
         setTitle(title)
         setPrice(price)
+        setLocal(getLocation(context, latitude, longitude))
         return this
     }
 
@@ -41,6 +38,10 @@ class ShortDescriptionView @JvmOverloads constructor(
         this.price.text = getCurrencyFormatted(price)
     }
 
+    private fun setLocal(local: String) {
+        this.city.text = local
+    }
+
     private fun getCurrencyFormatted(value: BigDecimal) : String {
         return NumberFormat.getCurrencyInstance(getLocale()).format(value)
     }
@@ -49,13 +50,13 @@ class ShortDescriptionView @JvmOverloads constructor(
         return Locale("pt", "BR")
     }
 
-    fun setLocation(context: Context, long: String, lat: String) {
-        try {
+    private fun getLocation(context: Context, latitude: BigDecimal, longitude: BigDecimal) : String {
+        return try {
             val geocoder   = Geocoder(context, getLocale())
-            val address    = geocoder.getFromLocation(lat.toDouble(), long.toDouble(), 1)
-            this.city.text = "${address[0].subAdminArea}"
+            val address    = geocoder.getFromLocation(latitude.toDouble(), longitude.toDouble(), 1)
+            "${address[0].subAdminArea}"
         } catch (ex: Exception) {
-            this.city.text = "Sem Localização"
+            "Sem Localização"
         }
     }
 }
